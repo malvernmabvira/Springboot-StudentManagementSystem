@@ -23,4 +23,10 @@ public class StudentsServiceImp implements StudentsService {
 		return repo.findAll();
 	}
 
+	@Override
+	public Students addStud(Students stud) {
+		
+		return repo.save(stud);
+	}
+
 }
